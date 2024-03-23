@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/Images/portfolioiconnew.png" />
+  </head>
+
+  <body>
+    <div class="page">
+      <!-------------- Navbar Section -------------->
+      <nav>
+        <a href="#home">
+          <img src="/Images/phillogo.png" class="logo" />
+        </a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="home" class="row top">
+        <!-------------- Header Text Section -------------->
+
+        <div class="header-text">
+          <p>Frontend / Fullstack</p>
+          <h1>
+            Hi My Name Is <br /><span>Philip Schønning</span><br />
+            & This Is My Portfolio
+          </h1>
+        </div>
+
+        <!-------------- Slideshow Section -------------->
+
+        <div class="slideshow-container">
+          <h1 class="title">Projects:</h1>
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/bildash.png" alt="Image 1" />
+            </a>
+          </div>
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BilAbonnement.git"
+              target="_blank"
+            >
+              <img src="/Images/biltable.png" alt="Image 2" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blomlogin.png" alt="Image 3" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/philipbenn/BlomBiler.git"
+              target="_blank"
+            >
+              <img src="/Images/blombilview.png" alt="Image 4" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+              target="_blank"
+            >
+              <img src="/Images/biomovies.png" alt="Image 5" />
+            </a>
+          </div>
+
+          <div class="mySlides">
+            <a
+              href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+              target="_blank"
+            >
+              <img src="/Images/bioseat.png" alt="Image 6" />
+            </a>
+          </div>
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <p id="about"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------- About Me Section -------------->
+
+      <div class="container">
+        <header id="main-header">
+          <h1 class="main-title">About Me</h1>
+        </header>
+
+        <section id="about">
+          <div id="profile-picture" class="profile-picture">
+            <img src="/Images/philip.jpg" alt="Profile Picture" />
+          </div>
+          <div id="bio" class="bio">
+            <h2 class="bio-title">Philip Benn Schønning</h2>
+            <p>
+              As a dedicated data science student starting my fourth semester, I
+              bring a passion for turning raw data into meaningful insights.
+              Specializing in frontend and fullstack development, I thrive on
+              creating seamless user experiences through innovative and
+              user-centric design.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact-about" class="contact-about">
+          <h2 class="contact-title">Contact Me</h2>
+          <p>Email: <span id="email">philip@des-design.com</span></p>
+        </section>
+      </div>
+
+        <!-------------- STA Section -------------->
+
+        <p id="projects"></p>
+        <div class="row">
+          <div class="sta">
+            <a
+              class="github"
+              href="https://github.com/Scrumbledore-s-Army/STA-Project-Backend-Web"
+              target="_blank"
+            >
+              <img
+                src="/Images/stacontact.png"
+                alt="STA Image 1"
+                class="project-image"
+              />
+              <img
+                src="/Images/staindex.png"
+                alt="STA Image 2"
+                class="project-image"
+              />
+              <img
+                src="/Images/statype.png"
+                alt="STA Image 3"
+                class="project-image"
+              />
+            </a>
+            <div class="button-container">
+              <button class="prev" onclick="changeSlide(-1, 'sta')">
+                ❮
+              </button>
+              <button class="next" onclick="changeSlide(1, 'sta')">
+                ❯
+              </button>
+            </div>
+          </div>
+  
+          <div class="col-right">
+            <h1>Scandinavian Training Academy</h1>
+            <p>
+              Scandinavian Training Academy was our 3rd semester project, where
+            we worked for our first real customer. It involved implementing a
+            comprehensive training platform tailored to their specific needs.
+            </p>
+          </div>
+        </div>
+
+      <!-------------- Blom Biler Section -------------->
+
+      <p id="projects"></p>
+      <div class="row">
+        <div class="blombiler">
+          <a
+            class="github"
+            href="https://github.com/philipbenn/BlomBiler.git"
+            target="_blank"
+          >
+            <img
+              src="/Images/blomlogin.png"
+              alt="Blom Biler Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/blombilview.png"
+              alt="Blom Biler Image 2"
+              class="project-image"
+            />
+          </a>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'blombiler')">
+              ❮
+            </button>
+            <button class="next" onclick="changeSlide(1, 'blombiler')">
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <h1>Blom Biler</h1>
+          <p>
+            Blom Biler was one of our 2nd semester projects, focusing on car
+            dealership management systems. It aimed to streamline operations
+            and enhance customer experience within the automotive industry.
+          </p>
+        </div>
+      </div>
+
+      <!-------------- Bil Abonnoment Section -------------->
+
+      <div class="row">
+        <div class="bilabonnoment">
+          <a
+            class="github"
+            href="https://github.com/philipbenn/BilAbonnement.git"
+            target="_blank"
+          >
+            <img
+              src="/Images/bildash.png"
+              alt="Bil Dashboard Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/biltable.png"
+              alt="Bil Table Image 2"
+              class="project-image"
+            />
+          </a>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'bilabonnoment')">
+              ❮
+            </button>
+            <button class="next" onclick="changeSlide(1, 'bilabonnoment')">
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <h1>Bil Abonnoment</h1>
+          <p>
+            Bil Abonnement, another project from our 2nd semester, was centered
+            around subscription-based car services. It focused on creating
+            efficient systems for managing vehicle subscriptions and user
+            interactions.
+          </p>
+        </div>
+      </div>
+
+      <!-------------- Kino xp Section -------------->
+
+      <div class="row">
+        <div class="kinoxp">
+          <a
+            class="github"
+            href="https://github.com/orgs/Scrumbledore-s-Army/repositories"
+            target="_blank"
+          >
+            <img
+              src="/Images/biomovies.png"
+              alt="Bio Movies Image 1"
+              class="project-image"
+            />
+            <img
+              src="/Images/bioseat.png"
+              alt="Bio Seats Image 2"
+              class="project-image"
+            />
+          </a>
+          <div class="button-container">
+            <button class="prev" onclick="changeSlide(-1, 'kinoxp')">❮</button>
+            <button class="next" onclick="changeSlide(1, 'kinoxp')">❯</button>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <h1>Kino XP</h1>
+          <p>
+            Kino XP was a cinema project undertaken during our 3rd semester. It
+            involved creating a comprehensive platform for managing cinema
+            operations, from ticket booking to seating arrangements, aimed at
+            enhancing the moviegoer experience.
+          </p>
+        </div>
+      </div>
+
+      <!-------------- Contact Section -------------->
+
+      <div class="container">
+        <p id="contact"></p>
+        <header id="main-header">
+          <h1 class="main-title">Contact Me</h1>
+        </header>
+
+        <section id="contact" class="contact">
+          <div class="contact-container">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/mrgwvqag"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button id="sendButton" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/slideshow.js"></script>
+    <script src="/js/pastProjects.js"></script>
+  </body>
+</html>
